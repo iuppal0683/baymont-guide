@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Baymont by Wyndham - Plainfield Guest Guide</title>
+<style>
+  :root {
+    --baymont-blue: #003366;
+    --baymont-gold: #fdb813;
+    --baymont-dark-gray: #333333;
+    --baymont-light-gray: #f5f5f5;
+    --baymont-white: #ffffff;
+    --baymont-hover: #e6b800;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--baymont-light-gray);
+    color: var(--baymont-dark-gray);
+    scroll-behavior: smooth;
+  }
+  a {
+    color: var(--baymont-blue);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  header {
+    background-color: var(--baymont-blue);
+    color: var(--baymont-white);
+    padding: 20px 10%;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  header img {
+    height: 50px;
+  }
+  nav {
+    display: flex; gap: 20px; flex-wrap: wrap;
+  }
+  nav a {
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  nav a:hover {
+    background-color: var(--baymont-gold);
+    color: var(--baymont-blue);
+  }
+  main {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 0 20px 60px;
+  }
+  h1, h2, h3 {
+    color: var(--baymont-blue);
+  }
+  section {
+    margin-bottom: 50px;
+    background: var(--baymont-white);
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+  }
+  /* Wifi section */
+  .wifi-info {
+    background-color: var(--baymont-blue);
+    color: var(--baymont-white);
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    display: flex; align-items: center; gap: 15px;
+    max-width: 400px;
+  }
+  .wifi-info svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--baymont-gold);
+  }
+  /* Channel table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  thead {
+    background-color: var(--baymont-gold);
+    color: var(--baymont-blue);
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  tbody tr:hover {
+    background-color: var(--baymont-hover);
+    color: var(--baymont-blue);
+    cursor: default;
+  }
+  /* Color-coded categories for channels */
+  .cat-hbo { background-color: #d6e5ff; }
+  .cat-local { background-color: #f9f9f9; }
+  .cat-news { background-color: #ffe7d6; }
+  .cat-entertainment { background-color: #e3ffe7; }
+  .cat-sports { background-color: #fff7d6; }
+
+  /* Locations list */
+  ul.locations-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  ul.locations-list li {
+    margin-bottom: 12px;
+  }
+  ul.locations-list li a {
+    font-weight: 600;
+  }
+
+  /* Stayover note */
+  .stayover-note {
+    background: var(--baymont-gold);
+    color: var(--baymont-blue);
+    padding: 15px 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    max-width: 500px;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      gap: 10px;
+    }
+    nav {
+      justify-content: center;
+    }
+    .wifi-info {
+      max-width: 100%;
+      justify-content: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="https://www.baymontinns.com/etc/designs/baymont/clientlibs/images/baymont-logo.svg" alt="Baymont by Wyndham Logo" />
+  <nav>
+    <a href="#welcome">Welcome</a>
+    <a href="#wifi">WiFi</a>
+    <a href="#channels">Channel Guide</a>
+    <a href="#locations">Nearby Locations</a>
+    <a href="#info">Guest Info</a>
+    <a href="#policies">Hotel Policies</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="welcome">
+  <h1>Welcome to Baymont by Wyndham - Plainfield, IN</h1>
+  <p>We’re delighted to host you! Please find all the information you need during your stay below.</p>
+</section>
+
+<section id="wifi">
+  <h2>WiFi Information</h2>
+  <div class="wifi-info" title="WiFi Password">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c.95 0 1.82-.33 2.5-.88l-1.44-1.44a2 2 0 0 1-1.12 0L9.5 17.12A3.982 3.982 0 0 0 12 18zm-6-6a9.958 9.958 0 0 1 6-2.25 9.958 9.958 0 0 1 6 2.25l-1.41 1.41A7.97 7.97 0 0 0 12 10a7.97 7.97 0 0 0-5.59 2.41L5.99 12zM12 8a13.956 13.956 0 0 1 7.85 2.65l-1.41 1.41A11.955 11.955 0 0 0 12 9c-3.09 0-5.89 1.23-7.89 3.22l-1.4-1.4A13.954 13.954 0 0 1 12 8zm0-2c-4.41 0-8.43 1.79-11.32 4.69l1.41 1.41A11.94 11.94 0 0 1 12 6c2.7 0 5.2 1.04 7.07 2.93l1.41-1.41C19.43 5.79 15.41 4 12 4z"/></svg>
+    <div>
+      <p><strong>Network:</strong> BaymontGuest</p>
+      <p><strong>Password:</strong> Plainfield$</p>
+    </div>
+  </div>
+</section>
+
+<section id="channels">
+  <h2>Channel Guide</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Channel Name</th>
+        <th>Channel Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- HBO -->
+      <tr class="cat-hbo"><td>HBO</td><td>98-1</td></tr>
+      <tr class="cat-hbo"><td>HBO 2</td><td>98-2</td></tr>
+      <tr class="cat-hbo"><td>HBO Signature</td><td>98-3</td></tr>
+      <tr class="cat-hbo"><td>HBO Comedy</td><td>99-1</td></tr>
+      <tr class="cat-hbo"><td>HBO Family</td><td>99-2</td></tr>
+      <tr class="cat-hbo"><td>HBO Latino</td><td>99-3</td></tr>
+      <tr class="cat-hbo"><td>HBO Zone</td><td>99-4</td></tr>
+      <!-- Local Channels -->
+      <tr class="cat-local"><td>Local Guide</td><td>11-1</td></tr>
+      <tr class="cat-local"><td>ABC</td><td>11-2</td></tr>
+      <tr class="cat-local"><td>WRTV 2 Grit TV</td><td>11-3</td></tr>
+      <tr class="cat-local"><td>CBS</td><td>11-4</td></tr>
+      <tr class="cat-local"><td>FOX 59</td><td>12-1</td></tr>
+      <tr class="cat-local"><td>WXIN Antenna TV</td><td>12-2</td></tr>
+      <tr class="cat-local"><td>NBC</td><td>12-3</td></tr>
+      <tr class="cat-local"><td>WTHR NBC2</td><td>12-4</td></tr>
+      <tr class="cat-local"><td>WISH CW</td><td>13-1</td></tr>
+      <tr class="cat-local"><td>WISH 2 get TV</td><td>13-2</td></tr>
+      <tr class="cat-local"><td>PBS</td><td>13-5</td></tr>
+      <tr class="cat-local"><td>PBS Kids</td><td>13-6</td></tr>
+      <tr class="cat-local"><td>ION</td><td>14-1</td></tr>
+      <tr class="cat-local"><td>WTHR 3 Me TV</td><td>23-2</td></tr>
+      <tr class="cat-local"><td>WNDY My TV</td><td>23-3</td></tr>
+      <tr class="cat-local"><td>WDNI Telemundo</td><td>24-1</td></tr>
+      <tr class="cat-local"><td>UNIMAS</td><td>25-3</td></tr>
+      <tr class="cat-local"><td>UNIVISION</td><td>25-4</td></tr>
+      <tr class="cat-local"><td>DAYSTAR</td><td>26-1</td></tr>
+      <tr class="cat-local"><td>TBN</td><td>26-2</td></tr>
+      <!-- Sports -->
+      <tr class="cat-sports"><td>Bally Sports</td><td>28-1</td></tr>
+      <tr class="cat-entertainment"><td>Guide 1</td><td>30-2</td></tr>
+      <tr class="cat-entertainment"><td>USA</td><td>30-1</td></tr>
+      <!-- Entertainment -->
+      <tr class="cat-entertainment"><td>A&E</td><td>31-1</td></tr>
+      <tr class="cat-entertainment"><td>TNT</td><td>31-2</td></tr>
+      <tr class="cat-entertainment"><td>TBS</td><td>31-3</td></tr>
+      <tr class="cat-entertainment"><td>AMC</td><td>31-4</td></tr>
+      <tr class="cat-entertainment"><td>DISCOVERY</td><td>32-1</td></tr>
+      <tr class="cat-entertainment"><td>HISTORY</td><td>32-2</td></tr>
+      <tr class="cat-entertainment"><td>FX</td><td>32-3</td></tr>
+      <tr class="cat-entertainment"><td>BBC America</td><td>33-1</td></tr>
+      <tr class="cat-entertainment"><td>SYFY</td><td>33-2</td></tr>
+      <tr class="cat-entertainment"><td>TRU TV</td><td>33-3</td></tr>
+      <tr class="cat-entertainment"><td>Comedy Central</td><td>34-1</td></tr>
+      <tr class="cat-entertainment"><td>Paramount</td><td>34-2</td></tr>
+      <tr class="cat-entertainment"><td>VH1</td><td>35-1</td></tr>
+      <tr class="cat-entertainment"><td>MTV</td><td>35-2</td></tr>
+      <tr class="cat-entertainment"><td>TVLAND</td><td>35-3</td></tr>
+      <tr class="cat-entertainment"><td>Freeform</td><td>35-4</td></tr>
+      <tr class="cat-entertainment"><td>Hallmark</td><td>36-1</td></tr>
+      <tr class="cat-entertainment"><td>NatGeo NGC</td><td>36-2</td></tr>
+      <tr class="cat-entertainment"><td>Animal Planet</td><td>36-3</td></tr>
+      <tr class="cat-entertainment"><td>Science</td><td>36-4</td></tr>
+      <tr class="cat-entertainment"><td>American Heroes</td><td>37-2</td></tr>
+      <tr class="cat-entertainment"><td>HGTV</td><td>37-3</td></tr>
+      <tr class="cat-entertainment"><td>Food Network</td><td>38-1</td></tr>
+      <tr class="cat-entertainment"><td>Travel</td><td>38-2</td></tr>
+      <tr class="cat-entertainment"><td>TLC</td><td>38-3</td></tr>
+      <tr class="cat-entertainment"><td>Bravo</td><td>39-1</td></tr>
+      <tr class="cat-entertainment"><td>E!</td><td>39-2</td></tr>
+      <tr class="cat-entertainment"><td>LIFETIME</td><td>40-1</td></tr>
+      <tr class="cat-entertainment"><td>OWN</td><td>40-2</td></tr>
+      <tr class="cat-entertainment"><td>BET</td><td>40-3</td></tr>
+      <tr class="cat-entertainment"><td>Ovation TV</td><td>40-4</td></tr>
+      <!-- News -->
+      <tr class="cat-news"><td>CNN</td><td>41-1</td></tr>
+      <tr class="cat-news"><td>FOX News</td><td>41-2</td></tr>
+      <tr class="cat-news"><td>MSNBC</td><td>41-3</td></tr>
+      <tr class="cat-news"><td>HLN</td><td>42-1</td></tr>
+      <tr class="cat-news"><td>CNBC</td><td>42-2</td></tr>
+      <tr class="cat-news"><td>FOX Business</td><td>42-3</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="locations">
+  <h2>Nearby Locations</h2>
+  <ul class="locations-list">
+    <li><a href="https://goo.gl/maps/3fYU8Y8EZaCq3iA38" target="_blank" rel="noopener">Lucas Oil Stadium</a></li>
+    <li><a href="https://goo.gl/maps/Fxb8YhsqrqukaNLv8" target="_blank" rel="noopener">Indianapolis Airport (IND)</a></li>
+    <li><a href="https://goo.gl/maps/4WbDS5sA25Lx8RCB7" target="_blank" rel="noopener">Downtown Indianapolis Convention Center</a></li>
+    <li><a href="https://goo.gl/maps/wvNQNuQthnYNxvP96" target="_blank" rel="noopener">Indianapolis Motor Speedway</a></li>
+    <!-- Added original locations below as well -->
+    <li><a href="https://goo.gl/maps/h5s6nq8vSNZ9xFLZ6" target="_blank" rel="noopener">Plainfield Public Library</a></li>
+    <li><a href="https://goo.gl/maps/jv6ZjTFKgTf3LoZy9" target="_blank" rel="noopener">Plainfield Recreation Center</a></li>
+    <li><a href="https://goo.gl/maps/bXWsyVoSR8PYGvZg8" target="_blank" rel="noopener">Downtown Plainfield</a></li>
+    <li><a href="https://goo.gl/maps/KuHKEHeG4NoEsuE99" target="_blank" rel="noopener">Marion County Fairgrounds</a></li>
+  </ul>
+</section>
+
+<section id="info">
+  <h2>Guest Information & Services</h2>
+  <p><strong>Laundry Room:</strong> Located on the
